@@ -1,9 +1,7 @@
 import "reflect-metadata"
-import express, { Request, Response } from "express"
+import express from "express"
 import { router } from "./routes"
-import createConnection from "./database"
-
-createConnection();
+import "./database"
 
 const server = express()
 
