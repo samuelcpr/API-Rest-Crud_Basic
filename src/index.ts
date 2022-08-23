@@ -1,8 +1,13 @@
+import "reflect-metadata"
 import express, { Request, Response } from "express"
 import { router } from "./routes"
+import createConnection from "./database"
 
+createConnection();
 
 const server = express()
+
+
 server.use(express.json())
 
 server.use(router)
