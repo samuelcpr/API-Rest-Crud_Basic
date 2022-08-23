@@ -3,7 +3,7 @@
     "database": "./src/database/database.sqlite",
     "migrations": ["./srec/database/migrations/*.ts"],
     "cli": {
-        "migrationsDir": "./srec/database/migrations/"
+        "migrationsDir": "./src/database/migrations/"
     }
 
 }
