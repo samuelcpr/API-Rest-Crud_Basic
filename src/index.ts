@@ -1,8 +1,11 @@
-import express, { Request, Response } from "express"
+import "reflect-metadata"
+import express from "express"
 import { router } from "./routes"
-
+import "./database"
 
 const server = express()
+
+
 server.use(express.json())
 
 server.use(router)
